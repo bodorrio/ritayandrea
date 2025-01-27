@@ -95,3 +95,37 @@
 .checkbox input[type="checkbox"]:checked + label svg path {
   stroke-dashoffset: 0px;
 }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--blue);
+  border-radius: 0.2em;
+  font-family: 'nats';
+  color: var(--blue);
+  padding: 0.3em;
+  margin: 0.3em;
+}
+.img-card {
+  width: 9em;
+  height: 7.5em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+.box-camp {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+  justify-content: center;
+  align-items: center;
+}
