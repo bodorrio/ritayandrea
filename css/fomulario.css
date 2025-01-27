@@ -1,0 +1,40 @@
+.box-border {
+    border: solid 1px var(--blue);
+    padding: 1em;
+    margin: 0.5em;
+    margin-top: 1.5em;
+    border-radius: 1em;
+}
+.box-button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+.text-alert {
+    font-family: "nats";
+    font-size: 1em;
+    color: var(--blue);
+    text-align: center;
+    line-height: 1em;
+}
+.text-alert-mobile {
+    display: none;
+}
+@media (max-width: 425px) {
+    .alert {
+        margin-top: 4em;
+    }
+    .text-alert {
+        display: none;
+    }
+    .text-alert-mobile {
+        display: block;
+        font-family: "nats";
+        font-size: 1.2em;
+        color: var(--blue);
+        text-align: center;
+        line-height: 1em;
+    }
+}

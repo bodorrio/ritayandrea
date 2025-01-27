@@ -1,0 +1,97 @@
+
+.animated-inputs {
+  max-width: 760px;
+  margin: 1em auto;
+}
+
+.animated-inputs .each {
+  margin: 0 auto;
+  position: relative;
+  text-align: left;
+  font-size: 1.1em;
+  font-family: 'nats';
+}
+
+.animated-inputs label {
+  display: inline-block;
+  position: relative;
+  font-size: 1.3em;
+  padding: 0 0 0 40px;
+  vertical-align: top;
+  color: var(--blue);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.animated-inputs input[type="checkbox"],
+.animated-inputs input[type="radio"],
+.animated-inputs label::before {
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 0;
+  margin-top: -15px;
+  position: absolute;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.animated-inputs input[type="checkbox"],
+.animated-inputs input[type="radio"] {
+  opacity: 0;
+  appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 100;
+}
+
+.animated-inputs label::before {
+  content: '';
+  border: 2px solid var(--blue);
+  transition: opacity 0.3s ease;
+}
+
+.checkbox label::before {
+  border-radius: 50%;
+}
+
+.animated-inputs input[type="checkbox"]:checked + label,
+.animated-inputs input[type="radio"]:checked + label {
+    color: var(--blue);
+}
+
+.animated-inputs input[type="checkbox"]:checked + label::before,
+.animated-inputs input[type="radio"]:checked + label::before {
+  border: 2px solid var(--blue);
+}
+
+/* General SVG and path styles */
+.animated-inputs svg {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin-top: -10px;
+  left: 5px;
+  pointer-events: none;
+}
+
+.animated-inputs svg path {
+  stroke: #ea7b52;
+  stroke-width: 13px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  transition: 0.8s stroke-dasharray ease, 0.8s stroke-dashoffset ease, 0.8s stroke ease;
+}
+
+/* Checkbox Animación */
+.checkbox input[type="checkbox"] + label svg path {
+  stroke-dasharray: 100px 200px;
+  stroke-dashoffset: 101px;
+  transition: 0.8s stroke-dasharray ease, 0.8s stroke-dashoffset ease, 0.8s stroke ease;
+}
+
+.checkbox input[type="checkbox"]:checked + label svg path {
+  stroke-dashoffset: 0px;
+}

@@ -1,0 +1,139 @@
+
+/* home */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 700px) {
+    .logo {
+        background-image: url(../img/header-img.png);
+        width: 100%;
+        height: 80em;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .box-home {
+        display: flex;
+        flex-direction: column;
+        margin: 2em;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-buttons {
+        display: flex;
+        gap: 2em;
+    }
+    .text-home {
+        font-family: 'nats';
+        color: var(--blue);
+        font-size: 2em;
+        text-align: center;
+    }
+    .title_two {
+        font-family: "mons";
+        color: var(--blue);
+        font-size: 2.5em;
+        line-height: 1.5em;
+    }
+}
+.logo {
+    background-image: url(../img/header-img.png);
+    width: 100%;
+    height: 40em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.title {
+    font-family: "mons";
+    color: var(--blue);
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+.text-home {
+    font-family: 'nats';
+    color: var(--blue);
+    font-size: 2em;
+    text-align: center;
+}
+.title_two {
+    font-family: "mons";
+    color: var(--blue);
+    font-size: 2.5em;
+    line-height: 1.5em;
+}
+.date {
+    display: flex;
+    align-items: center;
+}
+.dot {
+    height: 0.5em;
+    width: 0.5em;
+    background-color: var(--blue);
+    border-radius: 50%;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.button {
+    padding: 0.5em 1.5em;
+    background-color: transparent;
+    border: 1px solid var(--blue);
+    border-radius: 50px;
+    font-family: "nats";
+    color: var(--blue);
+    font-size: 1.5em;
+    text-decoration: none;
+    box-shadow: 0 0 0;
+    transition: all 200ms;
+    margin: 1.2em 0 0 0;
+    width: 5em;
+    box-shadow: 0px 5px 1px var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
+    .main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .logo {
+        height: 20em;
+    }
+    .footer {
+        height: 20em;
+    }
+    .title {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    .title_two {
+        font-size: 1em;
+    }
+    
+    .dot {
+        height: 0.1em;
+        width: 0.1em;
+    }
+    .box-home {
+        display: flex;
+        flex-direction: column;
+        font-family: 'nats';
+        color: var(--blue);
+        justify-content: center;
+        align-items: center;
+        margin-top: 2em;
+        padding: 1em;
+    }
+    .text-home {
+        font-size: 1.5em;
+        line-height: 1.2em;
+        text-align: center;
+    }
+}
