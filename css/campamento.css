@@ -107,20 +107,24 @@
   align-items: center;
   justify-content: center;
   border: 1px solid var(--blue);
-  border-radius: 0.2em;
+  border-radius: 0.3em;
   font-family: 'nats';
   color: var(--blue);
-  padding: 0.3em;
-  margin: 0.3em;
+  margin: 0.5em;
+  box-shadow: 0px 5px 1px var(--blue);
+  text-decoration: none;
 }
 .img-card {
+  padding: 0.5em;
+}
+img {
   width: 10em;
-  height: 7.5em;
+  height: 7.3em;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0;
-  padding: 0;
+  border-radius: 0.4em;
+  border: 1px solid var(--blue);
 }
 .box-camp {
   display: flex;
@@ -128,4 +132,14 @@
   margin-top: 5em;
   justify-content: center;
   align-items: center;
+}
+
+.card a {
+  text-decoration: none;
+  border: solid 1px var(--blue);
+  padding: 0.3em 1em;
+  border-radius: 2em;
+  box-shadow: 0px 3px 1px var(--blue);
+  margin-bottom: 2em;
+
 }
